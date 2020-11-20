@@ -1,0 +1,359 @@
+<html>
+
+<head>
+  <title>Dashboard - Grupou!</title>
+  <link rel="stylesheet" href="teste.css" />
+</head>
+
+<body>
+
+
+  <div id="modal-overlay">
+    <div id="modal">
+      <div id="modal-txtbox">
+        <div id="Modal-h2">Questão do dia</div>
+        <div id="Modal-SkillName">HTML</div>
+        <div id="Modal-h1">Que tipo de linguagem o HTML é?</div>
+        <li class="mult-choice">De programação</li>
+        <li class="mult-choice">De marcação</li> 
+        <li class="mult-choice">Figura de linguagem</li> 
+        <li class="mult-choice">De português</li>
+        <div id="modal-buttonbox">
+          <div id="Button-Confirm">Confirmar</div>
+        </div>
+      </div>
+      <div id="modal-timebox"> 
+        <div class="percent-modaltime">
+          <svg>
+            <circle cx="35" cy="35" r="35"></circle>
+            <circle cx="35" cy="35" r="31.5"></circle>
+          </svg>
+          <div class="modal-titlebox">
+            <span>Tempo</span>
+          <h1>32</h1>
+          </div>
+    </div>
+      </div>    
+    </div>
+  </div>
+<!--      <svg viewBox="40 40 40" class="circular-chart">
+        <path class="circle"
+          stroke-dasharray="90, 100"
+          d="M18 2.0845
+            a 15.9155 15.9155 0 0 1 0 31.831
+            a 15.9155 15.9155 0 0 1 0 -31.831"
+        />
+      </svg>-->
+
+  <div id="main">
+
+    <div id="header" class="centered shadow">
+      <div id="logo">
+        <a href="../login/index.html">
+          <img src="images/logo.png" width="150px" />
+        </a>
+
+      </div>
+      <div id="menu">
+        <ul id="links">
+          <li>
+            <a href="#" class="active">Dashboard</a>
+          </li>
+          <li>
+            <a href="#">Grupos</a>
+          </li>
+          <li>
+            <a href="#">Disciplinas</a>
+          </li>
+          <li>
+            <a href="#">Skills</a>
+          </li>
+        </ul>
+      </div>
+      <div id="profile">
+        <div id="containerData">
+          <div>
+            <p>Bernardo Cavalcante</p>
+            <p class="small">Aluno</p>
+          </div>
+        </div>
+        <div id="avatar">
+          <img class="avatar" height="40px" src="https://randomuser.me/api/portraits/men/3.jpg" />
+        </div>
+        <div class="arrow-down"></div>
+      </div>
+    </div>
+
+    <div id="content" class="centered">
+      <div id="containerTitle">
+        Dashboard
+      </div>
+      <div id="containerMain">
+        <div id="SkillComparison">
+          <div class="box shadow"><div id="BoxTitle">Comparativo de skills</div>
+            <div id="SkillName">HTML</div>
+            <div class="pbar_you"><progress id="progress_bar" value="90" max="100"></progress><span>&#32;você</span><div class="progress-value"></div></div>
+            <br>
+            <div class="pbar_class"><progress id="progress_bar" value="70" max="100" ></progress><span>&#32;turma</span><div class="progress-value"></div></div>
+            <div id="SkillName">Manipulação de Imagem</div>
+            <div class="pbar_you"><progress id="progress_bar" value="60" max="100" ></progress><span>&#32;você</span><div class="progress-value"></div></div>
+            <br>
+            <div class="pbar_class"><progress id="progress_bar" value="80" max="100"></progress><span>&#32;turma</span><div class="progress-value"></div></div>
+            <div id="SkillName">Prototipagem</div>
+            <div class="pbar_you"><progress id="progress_bar" value="50" max="100" ></progress><span>&#32;você</span><div class="progress-value"></div></div>
+            <br>
+            <div class="pbar_class"><progress id="progress_bar" value="80" max="100"></progress><span>&#32;turma</span><div class="progress-value"></div></div>
+            <div id="SkillName">Ilustração</div>
+            <div class="pbar_you"><progress id="progress_bar" value="90" max="100" ></progress><span>&#32;você</span><div class="progress-value"></div></div>
+            <br>
+            <div class="pbar_class"><progress id="progress_bar" value="70" max="100"></progress><span>&#32;turma</span><div class="progress-value"></div></div>
+            <div id="SkillName">Wireframe</div>
+            <div class="pbar_you"><progress id="progress_bar" value="90" max="100" ></progress><span>&#32;você</span><div class="progress-value"></div></div>
+            <br>
+            <div class="pbar_class"><progress id="progress_bar" value="90" max="100"></progress><span>&#32;turma</span><div class="progress-value"></div></div>
+          </div>
+        </div>
+        <div id="containerRight">
+          <div id="containerTopStudents">
+            <div class="box shadow"><div id="BoxTitle">Alunos top skills</div>
+            <div id="topstudents">
+              <div class="box-studentop">
+              <div class="user-status-note-topstudent"><span>9,0</span></div>
+                <svg>
+                  <circle cx="40" cy="40" r="40"></circle>
+                </svg>
+                <div class="percent-topstudent">
+                  <img alt="avatar" src="https://randomuser.me/api/portraits/women/30.jpg" class="user-avatar-top">
+                </div>
+                <div class="box-txtop">
+                    <div class="nametopstudent"><p>Juliana Almeida</p></div>
+                      <div class="skilltop"><p>HTML</p></div>
+                </div>
+              </div>
+                  <div class="box-studentop">
+              <div class="user-status-note-topstudent"><span>9,0</span></div>
+                <svg>
+                  <circle cx="40" cy="40" r="40"></circle>
+                </svg>
+                <div class="percent-topstudent">
+                  <img alt="avatar" src="https://randomuser.me/api/portraits/men/62.jpg" class="user-avatar-top">
+                </div>
+                <div class="box-txtop">
+                    <div class="nametopstudent"><p>Gustavo Assis</p></div>
+                      <div class="skilltop"><p>Ilustração</p></div>
+                </div>
+              </div>
+                  <div class="box-studentop">
+              <div class="user-status-note-topstudent"><span>9,0</span></div>
+                <svg>
+                  <circle cx="40" cy="40" r="40"></circle>
+                </svg>
+                <div class="percent-topstudent">
+                  <img alt="avatar" src="https://randomuser.me/api/portraits/men/91.jpg" class="user-avatar-top">
+                </div>
+                <div class="box-txtop">
+                    <div class="nametopstudent"><p>Fernando Leme</p></div>
+                      <div class="skilltop"><p>C#</p></div>
+                </div>
+              </div>
+                  <div class="box-studentop">
+              <div class="user-status-note-topstudent"><span>9,0</span></div>
+                <svg>
+                  <circle cx="40" cy="40" r="40"></circle>
+                </svg>
+                <div class="percent-topstudent">
+                  <img alt="avatar" src="https://randomuser.me/api/portraits/women/76.jpg" class="user-avatar-top">
+                </div>
+                <div class="box-txtop">
+                    <div class="nametopstudent"><p>Gabriela Silva</p></div>
+                      <div class="skilltop"><p>Prototipagem</p></div>
+                </div>
+              </div>
+                  <div class="box-studentop">
+              <div class="user-status-note-topstudent"><span>9,0</span></div>
+                <svg>
+                  <circle cx="40" cy="40" r="40" stroke-dasharray="100"></circle>
+                </svg>
+                <div class="percent-topstudent">
+                  <img alt="avatar" src="https://randomuser.me/api/portraits/women/75.jpg" class="user-avatar-top">
+                </div>
+                <div class="box-txtop">
+                    <div class="nametopstudent"><p>Carla Nogueira</p></div>
+                      <div class="skilltop"><p>Wireframe</p></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="containerSkills">
+            <div id="hardSkills">
+              <div class="box shadow"><div id="BoxTitle">Minhas top hardskills</div>
+              <div id="img-box">
+              <div class="containerskill">
+              <div class="card">
+                <div id="boxhardskill">
+            <div class="percent-hardskill">
+                <div class="user-status-note"><span>9,0</span></div>
+                <svg>
+                  <circle cx="35" cy="35" r="35"></circle>
+                  <circle cx="35" cy="35" r="31.5"></circle>
+                </svg>
+                <div class="titlebox">
+                HTML
+                </div>
+          </div>
+          <div class="percent-hardskill">
+            <div class="user-status-note"><span>9,0</span></div>
+            <svg>
+            <circle cx="35" cy="35" r="35"></circle>
+            <circle cx="35" cy="35" r="31.5"></circle>
+            </svg>
+            <div class="titlebox">
+            Ilustração
+            </div>
+      </div>
+          <div class="percent-hardskill">
+              <div class="user-status-note"><span>9,0</span></div>
+              <svg>
+                <circle cx="35" cy="35" r="35"></circle>
+                <circle cx="35" cy="35" r="31.5"></circle>
+              </svg>
+              <div class="titlebox">
+              Wireframe
+              </div>
+        </div>
+              </div>
+          </div>
+          </div>
+            </div>
+            </div>
+            </div>
+            <div id="softSkills">
+              <div class="box shadow"><div id="BoxTitle">Minhas top softskills</div>
+              <div class="post">
+                <ul class="tags">
+                  <li>Liderança</li>
+                  <li>Empata</li>
+                  <li>Proatividade</li>
+                  <li>Gestão de Conflitos</li>
+                  <li>Comunicação</li>
+                  <li>Interpessoalidade</li>
+                </ul>
+            </div> 
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="containerSubjects">
+        <div class="box shadow"><div id="BoxTitle">Gestão de Design
+          <div id="ButtonSeeMore">
+            <div class="button invert">Ver mais</div>
+          </div>
+        </div>
+        <div id="AV">AV1</div>
+        <div class="img-box">
+          <a class="avatar-link" href="#">
+              <img width="40" height="40"  alt="avatar" src="https://randomuser.me/api/portraits/men/62.jpg" class="user-avatar">
+             <div class="user-status"></div>
+          </a>
+           <a class="avatar-link" href="#">
+             <img width="40" height="40"  alt="avatar" src="https://randomuser.me/api/portraits/women/47.jpg" class="user-avatar">
+             <div class="user-status"></div>
+           </a>
+            <a class="avatar-link" href="#">
+              <img width="40" height="40"  alt="avatar" src="https://randomuser.me/api/portraits/women/30.jpg" class="user-avatar">
+            </a>
+            <a class="avatar-link" href="#">
+              <img width="40" height="40"  alt="avatar" src="https://randomuser.me/api/portraits/women/16.jpg" class="user-avatar">
+            </a>
+            <a class="avatar-link" href="#">
+              <img width="40" height="40"  alt="avatar" src="https://randomuser.me/api/portraits/men/91.jpg" class="user-avatar">
+              <div class="user-status"></div>
+            </a>
+         </div>
+         <div id="taskcomplet">Tarefas concluídas</div>
+            <div class="pbar_task"><progress id="progress_bar" value="78" max="100" ></progress><span>&#32;78%</span><div class="progress-value"></div></div>
+    </div>
+        <div class="box shadow"><div id="BoxTitle">Fotografia
+                    <div id="ButtonSeeMore">
+            <div class="button invert">Ver mais</div>
+          </div>
+        </div>
+        <div id="AV">AV1</div>
+        <div class="img-box">
+          <a class="avatar-link" href="#">
+              <img width="40" height="40"  alt="avatar" src="https://randomuser.me/api/portraits/men/91.jpg" class="user-avatar">
+             <div class="user-status"></div>
+          </a>
+           <a class="avatar-link" href="#">
+             <img width="40" height="40"  alt="avatar" src="https://randomuser.me/api/portraits/men/62.jpg" class="user-avatar">
+             <div class="user-status"></div>
+           </a>
+            <a class="avatar-link" href="#">
+              <img width="40" height="40"  alt="avatar" src="https://randomuser.me/api/portraits/men/58.jpg" class="user-avatar">
+            </a>
+            <a class="avatar-link" href="#">
+              <img width="40" height="40"  alt="avatar" src="https://randomuser.me/api/portraits/women/76.jpg" class="user-avatar">
+            </a>
+            <a class="avatar-link" href="#">
+              <img width="40" height="40"  alt="avatar" src="https://randomuser.me/api/portraits/men/32.jpg" class="user-avatar">
+              <div class="user-status"></div>
+            </a>
+         </div>
+         <div id="taskcomplet">Tarefas concluídas</div>
+            <div class="pbar_task"><progress id="progress_bar" value="62" max="100" ></progress><span>&#32;62%</span><div class="progress-value"></div></div>
+    </div>
+        <div class="box shadow"><div id="BoxTitle">Webdesign          <div id="ButtonSeeMore">
+          <div class="button invert">Ver mais</div>
+        </div>
+      </div>
+      <div id="AV">AV1</div>
+      <div class="img-box">
+        <a class="avatar-link" href="#">
+            <img width="40" height="40"  alt="avatar" src="https://randomuser.me/api/portraits/men/62.jpg" class="user-avatar">
+           <div class="user-status"></div>
+        </a>
+         <a class="avatar-link" href="#">
+           <img width="40" height="40"  alt="avatar" src="https://randomuser.me/api/portraits/women/30.jpg" class="user-avatar">
+         </a>
+          <a class="avatar-link" href="#">
+            <img width="40" height="40"  alt="avatar" src="https://randomuser.me/api/portraits/women/76.jpg" class="user-avatar">
+          </a>
+          <a class="avatar-link" href="#">
+            <img width="40" height="40"  alt="avatar" src="https://randomuser.me/api/portraits/men/58.jpg" class="user-avatar">
+          </a>
+          <a class="avatar-link" href="#">
+            <img width="40" height="40"  alt="avatar" src="https://randomuser.me/api/portraits/men/91.jpg" class="user-avatar">
+            <div class="user-status"></div>
+          </a>
+       </div>
+       <div id="taskcomplet">Tarefas concluídas</div>
+          <div class="pbar_task"><progress id="progress_bar" value="93" max="100" ></progress><span>&#32;93%</span><div class="progress-value"></div></div>
+  </div></div>
+      </div>
+  </div>
+
+    </div>
+
+    <div id="footer" class="centered">
+      <div id="logo">
+
+        <img src="images/logo_white.png" width="150px" />
+
+
+      </div>
+      <div id="about">
+        <p>Contato</p>
+        <p>contato@grupou.com.br</p>
+      </div>
+      <div id="social">
+        <img src="images/logo_linkedin.png" width="50px" />
+        <img src="images/logo_instagram.png" width="50px" />
+        <img src="images/logo_facebook.png" width="50px" />
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,828 @@
+body{
+  margin:0;
+  color:#fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: url(images/grafismo_backgroud.png) no-repeat fixed;
+  background-color: #259cd9;
+  background-size: 700px;
+  background-position: left;
+  background-position-y:400px;
+  color: #333;
+  width: 100vw;
+}
+
+a{
+  text-decoration: none;
+}
+
+#main{
+  display:flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+#header{
+  background-color: #fff;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+
+  position: fixed;
+  width: 100vw;
+}
+
+#header #logo{
+  flex:2;
+  margin-left: -7px;
+}
+
+#header #menu{
+  flex:3;
+  margin-top: 8px;
+}
+
+#header #menu ul#links{
+ 
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  color:#e85989;
+}
+
+
+#header #menu ul#links li{
+ flex:1;
+}
+
+#header #menu ul#links li a{
+  color:#e85989;
+  font-size: 15px;
+ 
+  
+  
+  
+}
+
+#header #menu ul#links li a:after{
+  content:' ';
+  border-bottom: 2px solid #fff;
+  height: 2px;
+  display: flex;
+  width: 15%;
+  padding-top:5px;
+}
+
+#header #menu ul#links li a.active{
+  color:#AC3376;
+  font-weight: bold;
+}
+
+#header #menu ul#links li a:hover{
+  color:#AC3376;
+}
+
+#header #menu ul#links li a:hover:after,
+#header #menu ul#links li a.active:after {
+  content:' ';
+  border-bottom: 2px solid #f59e3a;
+  height: 2px;
+  display: flex;
+  width: 15%;
+  padding-top:5px;
+}
+
+#header #profile{
+  flex:1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  min-width: 300px;
+}
+
+#header #profile #containerData{
+  display: flex;
+  
+  flex-direction: column;
+
+}
+
+#header #profile #containerData p{
+ font-size:13px;
+ line-height: 4px;
+ color:#e85989;
+ text-align: right;
+
+}
+
+#header #profile #containerData p.small{
+  font-size:11px;
+  
+}
+
+#header #profile #avatar{
+  padding:0px 8px;
+}
+
+.avatar{
+  border-radius: 50%;
+}
+
+.arrow-down {
+  width: 0; 
+  height: 0; 
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  
+  border-top: 5px solid #aaa;
+}
+
+progress {
+  border: 0px none;
+  background-color: #E5E5E5;
+  border-radius: 10px;
+  padding: 4px 5px 5px 5px;
+  }
+
+  .progress-value{
+    color: #444;
+    margin-top: -24px;
+    }
+
+#content{
+ 
+  flex:1;
+  display: flex;
+  flex-direction: column;
+  margin-top: 90px;
+  margin-bottom: 50px;
+}
+
+#content #containerTitle{
+
+
+  color:#fff;
+  font-size: 30px;
+}
+
+#content #containerMain{
+  flex:2;
+  display: flex;
+  min-height: 500px;
+  margin-top: 10px;
+}
+
+#content #containerMain #BoxTitle{
+  font-weight: 550;
+  font-size: 16px;
+  color: #333;
+  font-family: 'Roboto';
+  margin-bottom: -25px;
+  margin-top: 5px;
+}
+
+#content #containerMain #SkillComparison{
+  flex:1;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+#content #containerMain #SkillComparison #SkillName{
+  font-size: 12px;
+  color: #aaa;
+  margin-top: 55px;
+  margin-bottom: 5px;
+}
+
+#content #containerMain #SkillComparison .pbar_you span{
+  font-size: 10px;
+  color: #259cd9;
+  
+}
+
+#content #containerMain #SkillComparison .pbar_class span{
+  font-size: 10px;
+  color: #E4346F;
+
+}
+
+progress {
+  width: 200;
+  border: 0px none;
+  background-color: #FFF;
+  border-radius: 10px;
+  margin-left: -5px;
+  }
+
+  progress::-webkit-progress-bar {
+  background-color: #FFF;
+  box-shadow: 0 1px 0px 0 rgba(255, 255, 255, 0.2);
+  }
+   
+  .pbar_you progress::-webkit-progress-value {
+  background: #259cd9;
+  border-radius: 50px;
+  border:none;
+  }
+
+  .pbar_class progress::-webkit-progress-value {
+  background: #E4346F;
+  border-radius: 50px;
+  border:none;
+  }
+
+  .pbar_task progress::-webkit-progress-value {
+    background: #f59e3a;
+    border-radius: 50px;
+    border:none;
+    }
+
+  .progress-value{
+  color: #FFF;
+  margin-bottom: 5px;
+  }
+
+  .progressDiv {
+  width: 84%;
+  background: #FFF;
+  height: 325px;
+  border: 1px solid #FFF;
+  position: relative;
+  left: 7%;
+  top: 100px;
+  display: inline-block;
+  border-radius: 2px;
+  box-shadow: 0px 1px 1px 1px #FFF;
+  }
+
+  #content #containerMain #containerRight{
+  flex:2;
+
+  display:flex;
+  flex-direction: column;
+}
+
+#content #containerMain #containerRight #containerTopStudents{
+  flex:1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* start top student */
+
+.user-status-note-topstudent {
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  position: relative;
+  top: 90px;
+  left: 55px;
+  background-color: #E22F6B;
+  z-index: 900;
+  }
+  
+  .user-status-note-topstudent span{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 900;
+  color: #FFF;
+  font-size: 7px;
+  }
+
+  /* 2x bolinha de nota */
+
+  #topstudents {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 200px;
+  margin-top: 15px;
+  }
+  
+  .box-studentop {
+  flex-direction: column;
+  width: 90px;
+  padding: 5px;
+  }
+  
+  a.avatar-link{
+  position: relative;
+  display: inline-block;
+  }
+  
+  img.user-avatar-top{
+  border-radius: 50%;
+  display: block;
+  width: 68px;
+  height: 68px;
+  position: absolute;
+  bottom: 71px;
+  left: 11px;
+  }
+  
+  .percent-topstudent{
+    position: relative;
+    width: 0px; /* nome */
+    height: 0px;/* nome */
+  }
+  
+  .box-txtop {
+
+  margin: 5px;
+  flex-direction: column;
+  display:flex;
+  width: 80px;
+  position: relative;
+  top: -45px;
+  }
+  
+  .nametopstudent p{
+  font-size: 10px;
+  font-weight: 550;
+  color: #41485C;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+  justify-content: center;
+  position: relative;
+  }
+  
+  .skilltop p{
+  font-size: 10px;
+  color: #aaa;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+  position: relative;
+  
+  }
+
+  /* end top student */
+
+#content #containerMain #containerRight #containerSkills{
+  flex:1;
+  display: flex;
+  
+}
+
+/* start my top harskill */
+
+#content #containerMain #containerRight #containerSkills #hardSkills{
+  flex:1;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.user-status-note {
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  right: 20px;
+  bottom: 15px;
+  background-color: #E22F6B;
+  z-index: 999;
+}
+
+#content #containerMain #containerRight #containerSkills #hardSkills #img-box{  
+  display: flex;
+  justify-content: space-evenly;
+  
+  
+}
+
+.conteinerskill{
+  display: flex;
+}
+
+#content #containerMain #containerRight #containerSkills #hardSkills #img-box #boxhardskill{
+  flex-direction: row;
+  margin-left: -10px;
+  margin-top: 60px;
+}
+/*corrigir*/
+
+#content #containerMain #containerRight #containerSkills #hardSkills #img-box #boxhardskill span{
+  position:absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  z-index:999;
+  color: #FFF;
+  font-size: 7px;
+}
+
+.percent-hardskill{
+      position:relative;
+      width:90px;
+      height:90px;
+      float:left;
+}
+
+.percent-hardskill .titlebox{
+      position:absolute;
+      top:0;
+      left:0;
+      width: 90%;
+      height: 90%;
+      display: flex;
+      justify-content:center;
+      align-items:center;
+      z-index:999;
+      color: #F180A6;
+      font-size: 10px;
+
+}
+  
+svg circle{
+      fill:none;
+      stroke:#E22F6B;
+      stroke-width:5px;
+      stroke-linecap: round;
+      transform: translate(5px,5px);
+      stroke-dasharray:200;
+      stroke-dashoffset:0;
+}
+  
+svg circle:nth-child(2){
+      stroke-dasharray:200;
+      stroke-dashoffset:200;
+}
+  
+/* \/estudar melhor depois, n entendi bem */
+
+.card:nth-child(1) svg circle:nth-child(2){
+      stroke:  #F180A6;
+      stroke-width: 3px;
+      stroke-dashoffset: calc(200 - (200 * 90) / 100);
+}
+
+/* end my top harskill */
+
+/* start my top softskill */
+
+#content #containerMain #containerRight #containerSkills #softSkills{
+  flex:1;
+  display: flex;
+  flex-direction: column;
+}
+
+.post{
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 5px;
+}
+
+
+.tags{
+  list-style: none;
+  padding: 0;
+  margin-top: 35px;
+  display: flex;
+  flex-wrap: wrap;
+  }	
+
+.tags li {
+  margin: 0.5em 0.2em;
+  text-decoration: none;
+  padding: 8px 12px 8px ;
+	background:#259cd9;
+  border-radius: 4px;
+  color:#fff;
+  font-size: 11px;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  }
+
+
+.tags li:hover{
+  background:rgb(190, 187, 187);
+}	
+
+/* end my top softskill */
+
+#content #containerSubjects{
+  flex:1;
+  display: flex;
+  min-height: 200px;
+
+
+
+}
+
+#content #containerSubjects #BoxTitle{
+  font-weight: 599;
+  font-size: 15px;
+  color: #333;
+  font-family: 'Roboto';
+}
+
+#content #containerSubjects #BoxTitle #ButtonSeeMore{
+  display:flex;
+  float: right;
+}
+
+#content #containerSubjects #BoxTitle #ButtonSeeMore .invert{
+  background-color: transparent;
+  color:#ae1b73;
+  border:1px solid #ae1b73; 
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 65;
+  height: 20;
+  font-size: 8.5px;
+}
+
+#content #containerSubjects #AV{
+  font-size: 10px;
+  color: #aaa;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.img-box{  
+  display: flex;
+  justify-content: space-between;  
+  margin-top: 25px;
+}
+
+a.avatar-link{
+  position: relative;
+  display: inline-block;
+}
+
+.img-box img.user-avatar{
+  border-radius: 50%;
+  display: block;
+}
+
+.user-status {
+  border-radius: 50%;
+  height: 10px;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  width: 10px;
+  background-color: #3ACD7D;
+}
+
+.img-box img.user-avatar[width="40"] + .user-status{ 
+ right: 3px; /* lugar da bolinha */
+ bottom: -1px;
+}
+
+#content #containerSubjects .pbar_task span{
+  font-size: 10px;
+  color: #f59e3a;
+
+}
+
+#content #containerSubjects #taskcomplet{
+  font-size: 10px;
+  color: #aaa;
+  margin-top: 25px;
+  margin-bottom: 5px;
+}
+
+#footer{
+  background-color: #491648;
+  height: 120px;
+  display: flex;
+}
+
+#footer #logo{
+
+  flex:1;
+  display: flex;
+
+  align-items: center;
+
+}
+
+#footer #about{
+
+  flex:4;
+  display: flex;
+  
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+#footer #about p{
+  font-size: 13px;
+  line-height: 1px;
+  color:#fff;
+}
+
+#footer #social{
+  flex:1;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+
+#modal-overlay{
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  background-color: rgb(51,51,51,0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index:1000;
+}
+
+#modal{
+  width: 40vw;
+  height: 420px;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+}
+
+#Modal-h2{
+  font-weight: 599;
+  font-size: 18px;
+  color: #333;
+  font-family: sans-serif;
+
+}
+
+#Modal-SkillName{
+  font-size: 15px;
+  color: #aaa;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#modal-txtbox{
+  margin: 5px;
+  flex-direction: column;
+  display:flex;
+  width: 335px;
+  height: 380px;
+  position: relative;
+}
+
+#modal-timebox{
+  display: flex;
+  float:right;
+  position: relative;
+  width: 10vw;
+  height: 20vh;
+  flex-direction: column;
+  margin-top: 5px;
+  margin-left: 45px;
+}
+
+#modal-timebox .percent-modaltime svg circle{
+  fill:none;
+  stroke:  #F180A6;
+  stroke-width:5px;
+  stroke-linecap: round;
+  transform: translate(5px,5px);
+  stroke-dasharray:250;
+  stroke-dashoffset: 100;
+}
+
+#modal-timebox .percent-modaltime svg circle:nth-child(1){
+  stroke-dasharray:268;
+  stroke-dashoffset:100;
+  stroke:#E22F6B;
+}
+
+
+#Modal-h1{
+  font-weight: 599;
+  font-size: 20px;
+  color: #333;
+  font-family: sans-serif;
+  margin-top: 25px;
+  margin-bottom: 5px;
+}
+
+.mult-choice { 
+  background-color: transparent; 
+  border: 1px solid #9FA2B3; 
+  border-radius: 5px;
+  list-style-type: upper-alpha;
+  margin-top:10px;
+  margin-bottom:10px;
+  padding:12px;
+  width: 22vw;
+  font-size:11px;
+  color: #9FA2B3;
+  cursor: pointer;
+}
+
+#modal-buttonbox{
+  margin: 5px;
+  flex-direction: column;
+  display:flex;
+  width: 330px;
+  height: 200px;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+#Button-Confirm{
+  height:30px;
+  width:40%;
+  background-color: #ae1b73;
+  color:#fff;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.percent-modaltime{
+  position:relative;
+  width:90px;
+  height:90px;
+  float:left;
+}
+
+.percent-modaltime .modal-titlebox h1{
+  position:absolute;
+  top:-11px;
+  left:0;
+  width: 90%;
+  height: 90%;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  z-index:999;
+  color: #E22F6B;
+  font-size: 25px;
+}
+.percent-modaltime .modal-titlebox span{
+  position:absolute;
+  bottom:22px;
+  left:0;
+  width: 90%;
+  height: 90%;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  z-index:999;
+  color: #E22F6B;
+  font-size: 9px;
+}
+
+  @media only screen and (min-width:1200px){
+    .centered{
+      padding: 0px 150px;
+    }
+  }
+  
+
+
+/* DASHBOARD */
+
+.box{
+  background-color: #fff;
+  height: 100%;
+  border-radius: 15px;
+  padding: 20px;
+  box-sizing: border-box;
+  color:#333;
+  margin:10px;
+  flex-direction: column;
+  flex:1;
+}
+
+.shadow{
+  box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12)
+}

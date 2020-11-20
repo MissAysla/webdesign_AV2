@@ -1,0 +1,227 @@
+body{
+  margin:0;
+  color:#fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: url(images/login_backgroud.png) no-repeat fixed;
+  background-size: 1400px;
+  background-position-x: -200px;
+  background-position-y: -50px;
+  background-color: #259cd9;
+}
+
+a{
+  text-decoration: none;
+}
+
+#main{
+  display:flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+#header{
+  background-color: #e6e6e6;
+  height: 10vh;
+  display: none;
+}
+
+#content{
+ 
+  flex:1;
+  display: flex;
+}
+
+#footer{
+  background-color: #491648;
+  height: 120px;
+  display: flex;
+}
+
+#footer #logo{
+
+  flex:1;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+
+}
+
+#footer #about{
+
+  flex:4;
+  display: flex;
+  
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+#footer #about p{
+  font-size: 13px;
+  line-height: 1px;
+}
+
+#footer #social{
+  flex:1;
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;
+}
+
+#modal-overlay{
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  background-color: rgb(51,51,51,0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+#modal{
+  width: 80vw;
+  height: 80vh;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* LOGIN */
+
+#content #containerLogo{
+  flex:2;
+
+}
+
+#content #containerLogo #logo{
+  
+  padding: 60px 20px;
+}
+
+#content #containerLogo #pharse{
+ padding-left: 40px;
+ margin-top: 100px;
+
+}
+
+#content #containerLogo #pharse p{
+  font-size: 30px;
+  line-height: 15px;
+}
+
+
+#content #containerSignIn{
+  flex:1;
+  display: flex;
+  align-items: center;
+}
+
+#content #containerSignIn #containerLogin{
+  background-color: #fff;
+  width: 350px;
+  
+  border-radius: 20px;
+  color:#333;
+  padding:20px;
+  box-sizing: border-box;
+}
+
+#content #containerSignIn #containerLogin #containerButtons{
+ display:flex;
+}
+
+#content #containerSignIn #containerLogin #containerButtons 
+.button{
+  flex:1;
+  border-bottom:4px solid #AE1B73;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:0px 5px;
+  color:#673f66;
+  cursor: pointer;
+
+}
+
+#content #containerSignIn #containerLogin #containerButtons
+.inactive{
+  border:none;
+  color:#e6e6e6;
+}
+
+#content #containerSignIn #containerLogin #containerButtons
+.inactive:hover{
+  border-bottom:4px solid #AE1B73;
+  color:#673f66;
+}
+
+.box{
+  display: flex;
+  flex-direction: column;
+  margin-top:30px;
+}
+
+.box .title{
+  color:#ccc;
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.box input{
+  border:1px solid #ccc;
+  height: 50px;
+  border-radius: 5px;
+  padding: 0px 20px;
+}
+
+.box input::placeholder{
+  color:#ccc;
+}
+
+#forgotPassword{
+  color:#AE1B73;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 13px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+#content #containerSignIn #containerLogin
+#containerLoginOrJoin{
+  display:flex;
+  margin-top:40px;
+}
+
+#content #containerSignIn #containerLogin
+#containerLoginOrJoin .button{
+  height: 50px;
+  background-color: #ae1b73;
+  border:1px solid #ae1b73; 
+  color:#fff;
+  flex:1;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer; 
+}
+
+#content #containerSignIn #containerLogin
+#containerLoginOrJoin .invert{
+  background-color: #fff;
+  color:#ae1b73;
+}
+
+#content #containerSignIn #containerLogin
+#containerLoginOrJoin .invert:hover{
+  background-color: #ae1b73;
+  color:#fff;
+}
+
+#content #containerSignIn #containerLogin
+#containerLoginOrJoin .button:first-child{
+  margin-right: 15px;
+}
